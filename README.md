@@ -11,7 +11,7 @@
   - [Quoteum GraphQL Server](https://github.com/brygrill/quoteum-app/blob/master/functions/graphql-server.js)
   - [StravaQL](https://github.com/brygrill/stravaql)
 - Docker
-  - [Quoteum Services](https://github.com/brygrill/quoteum-app/tree/master/services)
+  - [Quoteum Services](https://github.com/brygrill/quoteum-app/tree/master/docker)
   - [Docker + Lets Encrypt](https://github.com/brygrill/docker-nginx-letsencrypt)
 - Firebase Functions
   - [Quoteum Functions](https://github.com/brygrill/quoteum-app/tree/master/functions)
