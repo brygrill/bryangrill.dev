@@ -9,7 +9,7 @@ class App extends Component {
           <h3><a target="_blank" href="https://github.com/brygrill">GITHUB</a></h3>
           <h3><a target="_blank" href="https://medium.com/@brygrill/latest">MEDIUM</a></h3>
           <h3><a target="_blank" href="https://twitter.com/brygrill">TWITTER</a></h3>
-          <h3><a target="_blank" href="https://github.com/brygrill/grill/blob/master/README.md">WORK</a></h3>
+          <h3><a target="_blank" href="https://github.com/brygrill/grill/blob/master/README.md">PROJECTS</a></h3>
         </div>
       </div>
     );
