@@ -1,6 +1,8 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import { ThemeProvider } from 'theme-ui';
+import theme from '@rebass/preset';
 
 import 'modern-normalize';
 import '../styles/normalize';
@@ -32,7 +34,7 @@ const IndexLayout: React.FC = ({ children }) => (
       }
     `}
     render={(data: StaticQueryProps) => (
-      <LayoutRoot>
+      <div>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
@@ -40,9 +42,11 @@ const IndexLayout: React.FC = ({ children }) => (
             { name: 'keywords', content: data.site.siteMetadata.keywords },
           ]}
         />
-        <Header title={data.site.siteMetadata.title} />
-        <LayoutMain>{children}</LayoutMain>
-      </LayoutRoot>
+        <ThemeProvider theme={theme}>
+          <header>Navigation</header>
+          <div>{children}</div>
+        </ThemeProvider>
+      </div>
     )}
   />
 );
