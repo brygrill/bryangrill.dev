@@ -1,18 +1,50 @@
-# Projects
+# gatsby-starter-typescript-plus
 
-- React
-  - [crypto-explorer app](https://github.com/brygrill/crypto-explorer/tree/master/app) - __WIP__ React app for viewing crypto prices and data
-  - [dash](https://github.com/brygrill/dash/tree/master/app) - __WIP__ React + GraphQL app for visualizing your Strava data
-  - [stock-quote](https://github.com/brygrill/stock-quote) - React app to search for stocks and get real-time quotes
-  - [public-transit-graphql-subscription app](https://github.com/brygrill/public-transit-graphql-subscription/tree/master/app) - __WIP__ GraphQL server w/ subscriptions for live public transit GPS data as GeoJSON
-  - [React/Apollo Starter](https://github.com/brygrill/cra-apollo-starter) - Create-React-App + Apollo Client + Apollo Server project starter
-- GraphQL
-  - [crypto-explorer server](https://github.com/brygrill/crypto-explorer/tree/master/server)
-  - [dash server](https://github.com/brygrill/dash/tree/master/server)
-  - [public-transit-graphql-subscription server](https://github.com/brygrill/public-transit-graphql-subscription/tree/master/server)
-- React Native
-  - [stock-quote-native](https://github.com/brygrill/stock-quote-native) - __WIP__ React Native app to search for stock data
+> A starter kit for TypeScript-based Gatsby projects with sensible defaults.
 
-- Firebase Functions
-  - [GraphQL Server](https://github.com/brygrill/stock-quote-native/tree/v1.0/functions)
-  - [Strava OAuth](https://github.com/brygrill/dash/blob/with-firebase-functions/functions/https/access.js)
+This is a starter kit for [Gatsby.js](https://www.gatsbyjs.org/) websites written in TypeScript. It includes the bare essentials for you to get started (styling, Markdown parsing, minimal toolset).
+
+## Features
+
+- TypeScript
+- ESLint (with custom ESLint rules)
+- Markdown rendering with Remark
+- Basic component structure
+- Styling with [emotion](https://emotion.sh/)
+
+## Geting started
+
+Install this starter (assuming you have `gatsby-cli` installed) by running the following command:
+
+```bash
+gatsby new project-name https://github.com/resir014/gatsby-starter-typescript-plus
+```
+
+## Developing
+
+A nodejs >= 6.0.0 setup with [yarn](https://yarnpkg.com/) is recommended.
+
+```bash
+# install dependencies
+yarn
+
+# ...or, for npm
+npm install
+
+# serve with hot reload at localhost:8000
+npm start
+
+# build for production
+npm run build
+
+# build for production and push to gh-pages branch
+npm run deploy
+```
+
+## Credits
+
+Built with [Gatsby](https://www.gatsbyjs.org/) - the blazing-fast static site generator for [React](https://facebook.github.io/react/).
+
+## Deploy
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/resir014/gatsby-starter-typescript-plus)
