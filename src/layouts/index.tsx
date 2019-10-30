@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { Box } from 'rebass';
 
+import Nav from '../components/Nav';
+
 interface StaticQueryProps {
   site: {
     siteMetadata: {
@@ -34,7 +36,7 @@ const IndexLayout: React.FC = ({ children }) => (
             { name: 'keywords', content: data.site.siteMetadata.keywords },
           ]}
         />
-        <header>Navigation</header>
+        <Nav />
         <Box
           sx={{
             maxWidth: 512,
