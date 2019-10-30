@@ -1,13 +1,11 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-
-import Page from '../components/Page';
-import Container from '../components/Container';
+import { Button } from 'rebass';
 import Layout from '../layouts';
 
 const IndexPage = () => (
   <Layout>
-    <h1>content </h1>
+    <p>content</p>
+    <Button>Hello</Button>
   </Layout>
 );
 

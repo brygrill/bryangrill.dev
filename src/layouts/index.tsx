@@ -1,15 +1,7 @@
 import * as React from 'react';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
-import { ThemeProvider } from 'theme-ui';
-import theme from '@rebass/preset';
-
-import 'modern-normalize';
-import '../styles/normalize';
-
-import Header from '../components/Header';
-import LayoutRoot from '../components/LayoutRoot';
-import LayoutMain from '../components/LayoutMain';
+import { Box } from 'rebass';
 
 interface StaticQueryProps {
   site: {
@@ -42,10 +34,17 @@ const IndexLayout: React.FC = ({ children }) => (
             { name: 'keywords', content: data.site.siteMetadata.keywords },
           ]}
         />
-        <ThemeProvider theme={theme}>
-          <header>Navigation</header>
-          <div>{children}</div>
-        </ThemeProvider>
+        <header>Navigation</header>
+        <Box
+          sx={{
+            maxWidth: 512,
+            mx: 'auto',
+            px: 1,
+            fontFamily: 'body',
+          }}
+        >
+          <main>{children}</main>
+        </Box>
       </div>
     )}
   />
