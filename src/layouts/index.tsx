@@ -3,6 +3,8 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { Box } from 'rebass';
 
+import '../styles/index.css';
+
 import Nav from '../components/Nav';
 
 interface StaticQueryProps {
@@ -39,9 +41,9 @@ const IndexLayout: React.FC = ({ children }) => (
         <Nav />
         <Box
           sx={{
-            maxWidth: 512,
+            // maxWidth: 512,
             mx: 'auto',
-            px: 1,
+            p: 2,
             fontFamily: 'body',
           }}
         >
