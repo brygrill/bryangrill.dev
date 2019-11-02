@@ -2,10 +2,10 @@ import * as React from 'react';
 import { Flex, Link } from 'rebass';
 
 const items = [
-  { title: 'Home', href: '#!' },
-  { title: 'Projects', href: '#projects' },
-  { title: 'Articles', href: '#articles' },
-  { title: 'Snippets', href: '#snippets' },
+  { title: 'HOME', href: '#!' },
+  { title: 'PROJECTS', href: '#projects' },
+  { title: 'ARTICLES', href: '#articles' },
+  { title: 'CODE', href: '#code' },
 ];
 
 const Nav = () => {
@@ -20,7 +20,11 @@ const Nav = () => {
     >
       {items.map(i => {
         return (
-          <Link variant="nav" sx={{ fontSize: [2, 3] }} href={i.href}>
+          <Link
+            variant="nav"
+            sx={{ fontSize: [1, 2, 3], mx: [2, 3], p: 0 }}
+            href={i.href}
+          >
             {i.title}
           </Link>
         );
