@@ -1,13 +1,16 @@
 import * as React from 'react';
-import { Tiles, Image } from 'rebass';
+import { Flex, Image } from 'rebass';
 
-export const Social = () => {
+import { social } from '../config';
+
+const Social = () => {
   return (
-    <Tiles width={[96, null, 128]}>
-      <Image src={props.image} />
-      <Image src={props.image} />
-      <Image src={props.image} />
-      <Image src={props.image} />
-    </Tiles>
+    <Flex sx={{ justifyContent: 'center' }}>
+      {social.map(i => {
+        return <Image src={i.src} sx={{ maxWidth: 60, mx: 3, my: 4 }} />;
+      })}
+    </Flex>
   );
 };
+
+export default Social;

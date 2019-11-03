@@ -3,6 +3,7 @@ import { Box } from 'rebass';
 import Layout from '../layouts';
 
 import Header from '../components/Header';
+import Social from '../components/Social';
 
 const IndexPage = () => (
   <Layout>
@@ -12,6 +13,7 @@ const IndexPage = () => (
       }}
     >
       <Header />
+      <Social />
     </Box>
   </Layout>
 );
