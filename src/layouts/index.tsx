@@ -6,6 +6,7 @@ import { Box } from 'rebass';
 import '../styles/index.css';
 
 import Nav from '../components/Nav';
+import { features } from '../config';
 
 interface StaticQueryProps {
   site: {
@@ -44,12 +45,12 @@ const IndexLayout: React.FC = ({ children }) => (
             },
           ]}
         />
-        <Nav />
+        {features.nav && <Nav />}
         <Box
           sx={{
-            // maxWidth: 512,
             mx: 'auto',
-            p: 2,
+            maxWidth: 768,
+            p: [2, 3, 4],
             fontFamily: 'body',
           }}
         >
