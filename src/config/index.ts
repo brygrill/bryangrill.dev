@@ -1,4 +1,8 @@
-import github from '../images/github-icon.svg';
+import {
+  faGithub,
+  faMediumM,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 
 export const nav = [
   { title: 'HOME', href: '!' },
@@ -8,9 +12,9 @@ export const nav = [
 ];
 
 export const social = [
-  { title: 'github', src: github, href: '' },
-  { title: 'github', src: github, href: '' },
-  { title: 'github', src: github, href: '' },
+  { title: 'github', src: faGithub, href: '' },
+  { title: 'medium', src: faMediumM, href: '' },
+  { title: 'twitter', src: faTwitter, href: '' },
 ];
 
 export const features = {
