@@ -4,6 +4,7 @@ import Layout from '../layouts';
 
 import Header from '../components/Header';
 import Social from '../components/Social';
+import Tech from '../components/Tech';
 
 const IndexPage = () => (
   <Layout>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     >
       <Header />
       <Social />
+      <Tech />
     </Box>
   </Layout>
 );
