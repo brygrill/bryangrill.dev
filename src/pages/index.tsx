@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Box } from 'rebass';
-import Layout from '../layouts';
 
+import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Tech from '../components/Tech';
 

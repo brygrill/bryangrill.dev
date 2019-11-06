@@ -5,14 +5,7 @@ import { nav } from '../config';
 
 const Nav = () => {
   return (
-    <Flex
-      sx={{
-        p: 3,
-        fontWeight: 'bold',
-        fontFamily: 'body',
-        justifyContent: 'center',
-      }}
-    >
+    <>
       {nav.map(i => {
         return (
           <Link
@@ -24,7 +17,7 @@ const Nav = () => {
           </Link>
         );
       })}
-    </Flex>
+    </>
   );
 };
 

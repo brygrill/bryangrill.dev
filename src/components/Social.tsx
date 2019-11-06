@@ -6,7 +6,7 @@ import { social } from '../config';
 
 const Social = () => {
   return (
-    <Flex sx={{ justifyContent: 'flex-end', pt: 1 }}>
+    <Flex sx={{ justifyContent: 'flex-end' }}>
       {social.map(i => {
         return (
           <Box sx={{ mr: [1, 2] }}>

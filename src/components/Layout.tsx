@@ -5,9 +5,7 @@ import { Box } from 'rebass';
 
 import '../styles/index.css';
 
-import Nav from '../components/Nav';
-import Social from '../components/Social';
-import { features } from '../config';
+import Menu from './Menu';
 
 interface StaticQueryProps {
   site: {
@@ -46,8 +44,7 @@ const IndexLayout: React.FC = ({ children }) => (
             },
           ]}
         />
-        {features.nav && <Nav />}
-        <Social />
+        <Menu />
         <Box
           sx={{
             mx: 'auto',
