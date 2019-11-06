@@ -1,5 +1,9 @@
 import * as React from 'react';
-import { Flex, Box, Heading } from 'rebass';
+import { Box } from 'rebass';
+
+import ImageGrid from './ImageGrid';
+
+import { tech } from '../config';
 
 const Tech = () => {
   return (
@@ -8,46 +12,14 @@ const Tech = () => {
         py: [2, 3, 4],
       }}
     >
-      <Heading
-        sx={{
-          fontSize: [3, 4, 5],
-          mb: 3,
-        }}
-      >
-        Tech I Use
-      </Heading>
-      <Box
-        sx={{
-          display: 'grid',
-          gridGap: 4,
-          gridTemplateColumns: 'repeat(auto-fit, minmax(128px, 1fr))',
-        }}
-      >
-        <Heading p={3} bg="muted">
-          Hello
-        </Heading>
-        <Box p={3} color="background" bg="primary">
-          CSS Grid
-        </Box>
-        <Heading p={3} bg="muted">
-          Hello
-        </Heading>
-        <Box p={3} color="background" bg="primary">
-          CSS Grid
-        </Box>
-        <Heading p={3} bg="muted">
-          Hello
-        </Heading>
-        <Box p={3} color="background" bg="primary">
-          CSS Grid
-        </Box>
-        <Heading p={3} bg="muted">
-          Hello
-        </Heading>
-        <Box p={3} color="background" bg="primary">
-          CSS Grid
-        </Box>
-      </Box>
+      <ImageGrid
+        header="Everyday I work with this software"
+        items={tech.everyday}
+      />
+      <ImageGrid
+        header="I've also work with this software"
+        items={tech.sometimes}
+      />
     </Box>
   );
 };

@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <Box
       sx={{
-        py: 5,
+        py: [3, 5],
         px: 2,
       }}
     >
@@ -17,7 +17,7 @@ const IndexPage = () => (
     </Box>
     <Box
       sx={{
-        py: 5,
+        py: [3, 5],
         px: [1, 3, 5],
       }}
     >
