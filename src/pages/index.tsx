@@ -3,18 +3,22 @@ import { Box } from 'rebass';
 import Layout from '../layouts';
 
 import Header from '../components/Header';
-import Social from '../components/Social';
 import Tech from '../components/Tech';
 
 const IndexPage = () => (
   <Layout>
     <Box
       sx={{
-        minHeight: '300px',
+        pt: [5, 6],
       }}
     >
       <Header />
-      <Social />
+    </Box>
+    <Box
+      sx={{
+        pt: [5, 6],
+      }}
+    >
       <Tech />
     </Box>
   </Layout>

@@ -6,10 +6,10 @@ import { social } from '../config';
 
 const Social = () => {
   return (
-    <Flex sx={{ justifyContent: 'flex-start' }}>
+    <Flex sx={{ justifyContent: 'flex-end', pt: 1 }}>
       {social.map(i => {
         return (
-          <Box sx={{ mr: 3, my: 3 }}>
+          <Box sx={{ mr: [1, 2] }}>
             <Link href="www.google.com" variant="nav">
               <FontAwesomeIcon icon={i.src} size="2x" />
             </Link>

@@ -3,13 +3,7 @@ import { Flex, Box, Heading } from 'rebass';
 
 const Header = () => {
   return (
-    <Box
-      sx={
-        {
-          // p: [2, 3, 4],
-        }
-      }
-    >
+    <Box>
       <Heading
         sx={{
           fontSize: [4, 5, 6],
