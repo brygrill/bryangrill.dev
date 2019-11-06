@@ -4,9 +4,16 @@ import {
   faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
 
+import js from '../images/javascript.svg';
+import react from '../images/react.svg';
+import python from '../images/python.svg';
+import ts from '../images/typescript-icon.svg';
 import aws from '../images/aws.svg';
-import azure from '../images/azure.svg';
+import serverless from '../images/serverless.svg';
 import circleci from '../images/circleci.svg';
+import github from '../images/github-icon.svg';
+
+import azure from '../images/azure.svg';
 import docker from '../images/docker-icon.svg';
 
 export const features = {
@@ -28,23 +35,25 @@ export const social = [
 
 export const tech = {
   everyday: [
+    { id: 'js', src: js },
+    { id: 'react', src: react },
+    { id: 'python', src: python },
+    { id: 'ts', src: ts },
     { id: 'aws', src: aws },
-    { id: 'azure', src: azure },
-    { id: 'aws', src: aws },
-    { id: 'azure', src: azure },
-    { id: 'aws', src: aws },
-    { id: 'azure', src: azure },
-    { id: 'aws', src: aws },
-    { id: 'azure', src: azure },
+    { id: 'serverless', src: serverless },
+    { id: 'circleci', src: circleci },
+    { id: 'github', src: github },
   ],
   sometimes: [
-    { id: 'circleci', src: circleci },
+    { id: 'azure', src: azure },
     { id: 'docker', src: docker },
-    { id: 'circleci', src: circleci },
+    { id: 'azure', src: azure },
     { id: 'docker', src: docker },
-    { id: 'circleci', src: circleci },
+    { id: 'azure', src: azure },
     { id: 'docker', src: docker },
-    { id: 'circleci', src: circleci },
+    { id: 'azure', src: azure },
+    { id: 'docker', src: docker },
+    { id: 'azure', src: azure },
     { id: 'docker', src: docker },
   ],
 };

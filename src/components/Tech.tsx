@@ -13,12 +13,16 @@ const Tech = () => {
       }}
     >
       <ImageGrid
-        header="Everyday I work with this software"
+        header="Everyday I use"
         items={tech.everyday}
+        size="70%"
+        repeat={4}
       />
       <ImageGrid
-        header="I've also work with this software"
+        header="I also worked with"
         items={tech.sometimes}
+        size="60%"
+        repeat={5}
       />
     </Box>
   );
