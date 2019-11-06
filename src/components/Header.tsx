@@ -30,16 +30,15 @@ const Header = () => {
             py: 1,
           }}
         >
-          Hi, my name is Bryan.
+          Hi!
         </Heading>
         <Heading
           sx={{
             fontSize: [1, 2, 3],
           }}
         >
-          I am a software developer from Pennsylvania. I work on the frontend,
-          backend, and in the cloud. I especially enjoy building web
-          applications with React.
+          I'm Bryan and I'm software developer. I work on the frontend, backend,
+          and in the cloud.
         </Heading>
       </Box>
       <Box sx={{ p: 3 }}>
