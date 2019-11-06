@@ -9,14 +9,16 @@ const IndexPage = () => (
   <Layout>
     <Box
       sx={{
-        pt: [5, 6],
+        py: 5,
+        px: 2,
       }}
     >
       <Header />
     </Box>
     <Box
       sx={{
-        pt: [5, 6],
+        py: 5,
+        px: [1, 3, 5],
       }}
     >
       <Tech />

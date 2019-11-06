@@ -48,7 +48,7 @@ const IndexLayout: React.FC = ({ children }) => (
         <Box
           sx={{
             mx: 'auto',
-            maxWidth: 768,
+            // maxWidth: 768,
             p: [2, 3, 4],
             fontFamily: 'body',
           }}
