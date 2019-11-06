@@ -11,10 +11,22 @@ import ts from '../images/typescript-icon.svg';
 import aws from '../images/aws.svg';
 import serverless from '../images/serverless.svg';
 import circleci from '../images/circleci.svg';
-import github from '../images/github-icon.svg';
+import git from '../images/git-icon.svg';
 
 import azure from '../images/azure.svg';
 import docker from '../images/docker-icon.svg';
+import apollo from '../images/apollostack.svg';
+import elastic from '../images/elasticsearch.svg';
+import firebase from '../images/firebase.svg';
+import gatsby from '../images/gatsby.svg';
+import gcp from '../images/gcp.svg';
+import graphql from '../images/graphql.svg';
+import jest from '../images/jest.svg';
+import kube from '../images/kubernetes.svg';
+import netlify from '../images/netlify.svg';
+import nodejs from '../images/nodejs.svg';
+import mapbox from '../images/mapbox.svg';
+import leaflet from '../images/leaflet.svg';
 
 export const features = {
   nav: false,
@@ -42,18 +54,22 @@ export const tech = {
     { id: 'aws', src: aws },
     { id: 'serverless', src: serverless },
     { id: 'circleci', src: circleci },
-    { id: 'github', src: github },
+    { id: 'git', src: git },
   ],
   sometimes: [
     { id: 'azure', src: azure },
     { id: 'docker', src: docker },
-    { id: 'azure', src: azure },
-    { id: 'docker', src: docker },
-    { id: 'azure', src: azure },
-    { id: 'docker', src: docker },
-    { id: 'azure', src: azure },
-    { id: 'docker', src: docker },
-    { id: 'azure', src: azure },
-    { id: 'docker', src: docker },
+    { id: 'apollo', src: apollo },
+    { id: 'elastic', src: elastic },
+    { id: 'firebase', src: firebase },
+    { id: 'gatsby', src: gatsby },
+    { id: 'graphql', src: graphql },
+    { id: 'gcp', src: gcp },
+    { id: 'kube', src: kube },
+    { id: 'jest', src: jest },
+    { id: 'netlify', src: netlify },
+    { id: 'nodejs', src: nodejs },
+    { id: 'mapbox', src: mapbox },
+    { id: 'leaflet', src: leaflet },
   ],
 };
