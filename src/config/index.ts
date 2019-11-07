@@ -29,13 +29,13 @@ import mapbox from '../images/mapbox.svg';
 import leaflet from '../images/leaflet.svg';
 
 export const features = {
-  nav: false,
+  nav: true,
 };
 
 export const nav = [
-  { title: 'HOME', href: '!' },
-  { title: 'PROJECTS', href: 'projects' },
-  { title: 'ARTICLES', href: 'articles' },
+  { title: 'HOME', href: '/' },
+  // { title: 'PROJECTS', href: 'projects' },
+  // { title: 'ARTICLES', href: 'articles' },
   // { title: 'CODE', href: '#code' },
 ];
 

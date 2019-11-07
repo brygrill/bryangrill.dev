@@ -17,7 +17,13 @@ interface StaticQueryProps {
   };
 }
 
-const IndexLayout: React.FC = ({ children }) => (
+const IndexLayout = ({
+  children,
+  maxWidth = 1200,
+}: {
+  children: React.ReactNode;
+  maxWidth: number;
+}) => (
   <StaticQuery
     query={graphql`
       query IndexLayoutQuery {
@@ -48,7 +54,7 @@ const IndexLayout: React.FC = ({ children }) => (
         <Box
           sx={{
             mx: 'auto',
-            // maxWidth: 768,
+            maxWidth,
             p: [2, 3, 4],
             fontFamily: 'body',
           }}
