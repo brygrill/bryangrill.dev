@@ -40,9 +40,9 @@ export const nav = [
 ];
 
 export const social = [
-  { title: 'github', src: faGithub, href: '' },
-  { title: 'medium', src: faMediumM, href: '' },
-  { title: 'twitter', src: faTwitter, href: '' },
+  { title: 'github', src: faGithub, href: 'https://github.com/brygrill' },
+  { title: 'medium', src: faMediumM, href: 'https://medium.com/@brygrill' },
+  { title: 'twitter', src: faTwitter, href: 'https://twitter.com/brygrill' },
 ];
 
 export const tech = {

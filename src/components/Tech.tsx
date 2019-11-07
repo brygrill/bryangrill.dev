@@ -19,7 +19,7 @@ const Tech = () => {
         repeat={4}
       />
       <ImageGrid
-        header="I also worked with"
+        header="I also work with"
         items={tech.sometimes}
         size="60%"
         repeat={5}

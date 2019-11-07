@@ -9,8 +9,8 @@ const Social = () => {
     <Flex sx={{ justifyContent: 'flex-end' }}>
       {social.map(i => {
         return (
-          <Box sx={{ mr: [1, 2] }}>
-            <Link href="www.google.com" variant="nav">
+          <Box sx={{ mr: [1, 2] }} key={i.title}>
+            <Link href={i.href} variant="nav">
               <FontAwesomeIcon icon={i.src} size="2x" />
             </Link>
           </Box>
