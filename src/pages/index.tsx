@@ -6,7 +6,7 @@ import Header from '../components/Header';
 import Tech from '../components/Tech';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout maxWidth={1200}>
     <Box
       sx={{
         py: [3, 5],
