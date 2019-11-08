@@ -1,20 +1,69 @@
 {
-  "name": "brygrill",
+  "name": "grill-website",
   "version": "1.0.0",
-  "private": false,
   "license": "MIT",
-  "devDependencies": {
-    "react-scripts": "1.1.1"
+  "main": "n/a",
+  "scripts": {
+    "clean": "rimraf public",
+    "start": "gatsby develop",
+    "format": "prettier --write \"src/**/*.{ts,tsx,md}\"",
+    "type-check": "tsc",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "test": "yarn type-check && yarn lint",
+    "build": "gatsby build"
+  },
+  "engines": {
+    "node": ">=8.0.0"
   },
   "dependencies": {
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "@mdx-js/react": "^1.5.1",
+    "@rebass/preset": "^4.0.5",
+    "gatsby": "^2.17.6",
+    "gatsby-image": "^2.2.30",
+    "gatsby-plugin-canonical-urls": "^2.1.0",
+    "gatsby-plugin-emotion": "^4.1.0",
+    "gatsby-plugin-manifest": "^2.2.26",
+    "gatsby-plugin-offline": "^3.0.18",
+    "gatsby-plugin-react-helmet": "^3.1.0",
+    "gatsby-plugin-sharp": "^2.2.34",
+    "gatsby-plugin-theme-ui": "^0.2.43",
+    "gatsby-plugin-typescript": "^2.1.0",
+    "gatsby-remark-copy-linked-files": "^2.1.0",
+    "gatsby-remark-images": "^3.1.0",
+    "gatsby-remark-prismjs": "^3.3.0",
+    "gatsby-remark-responsive-iframe": "^2.2.0",
+    "gatsby-remark-smartypants": "^2.1.0",
+    "gatsby-source-filesystem": "^2.1.0",
+    "gatsby-transformer-json": "^2.2.0",
+    "gatsby-transformer-remark": "^2.5.0",
+    "gatsby-transformer-sharp": "^2.3.1",
+    "prism-themes": "^1.1.0",
+    "prismjs": "^1.16.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "rebass": "^4.0.7",
+    "theme-ui": "^0.2.46",
+    "typescript": "^3.5.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "deploy": "yarn run build && firebase deploy",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@types/node": "^12.0.10",
+    "@types/react": "^16.8.22",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-helmet": "^5.0.8",
+    "@types/rebass": "^4.0.3",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.0.0",
+    "eslint-config-blvd": "^0.1.1",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3"
   }
 }
