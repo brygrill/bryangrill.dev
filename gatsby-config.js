@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Bryan Grill',
-    description: 'Personal website...TODO',
+    description: 'Personal website of software developer Bryan Grill',
     keywords: 'software developer, javascript, react, python',
     siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
     author: {
