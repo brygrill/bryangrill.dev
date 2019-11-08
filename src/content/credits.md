@@ -1,6 +1,8 @@
 ---
+title: Credits
+date: 2019-07-10
+path: /credits
 layout: page
-title: 'Example Markdown page'
 ---
 
 acknowledgements here
