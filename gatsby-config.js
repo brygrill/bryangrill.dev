@@ -3,7 +3,7 @@ module.exports = {
     title: 'Bryan Grill',
     description: 'Personal website of software developer Bryan Grill',
     keywords: 'software developer, javascript, react, python',
-    siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
+    siteUrl: 'https://brygrill.com',
     author: {
       name: 'Bryan Grill',
       url: 'https://twitter.com/brygrill',
@@ -45,17 +45,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://gatsby-starter-typescript-plus.netlify.com',
+        siteUrl: 'https://brygrill.com',
       },
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `Bryan Grill`,
+        short_name: `Bryan Grill`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         display: `standalone`,
         icon: 'src/images/favicon.png',
       },
