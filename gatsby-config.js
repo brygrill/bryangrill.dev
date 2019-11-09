@@ -41,7 +41,6 @@ module.exports = {
         ],
       },
     },
-    'gatsby-transformer-json',
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
@@ -60,6 +59,13 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-99111620-3',
+      },
+    },
+    'gatsby-transformer-json',
     'gatsby-plugin-emotion',
     'gatsby-plugin-typescript',
     'gatsby-plugin-sharp',
