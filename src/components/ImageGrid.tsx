@@ -32,31 +32,33 @@ const ImageGrid = ({
           },
         }}
       >
-        {items.map(i => {
-          return (
-            <Flex
-              key={i.id}
-              sx={{ justifyContent: 'center', alignItems: 'center' }}
-            >
-              <Card
-                sx={{
-                  display: 'flex',
-                  flexDirection: 'column',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  height: '15rem',
-                  backgroundColor: '#5e5e5e1a',
-                }}
+        {items
+          .sort((a, b) => (a.id > b.id ? 1 : -1))
+          .map(i => {
+            return (
+              <Flex
+                key={i.id}
+                sx={{ justifyContent: 'center', alignItems: 'center' }}
               >
-                <Image
-                  src={i.src}
-                  sx={{ p: 2, width: ['80%', size], minHeight: '175px' }}
-                />
-                <Heading>{i.label || i.id}</Heading>
-              </Card>
-            </Flex>
-          );
-        })}
+                <Card
+                  sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    height: '15rem',
+                    backgroundColor: '#5e5e5e1a',
+                  }}
+                >
+                  <Image
+                    src={i.src}
+                    sx={{ p: 2, width: ['80%', size], minHeight: '175px' }}
+                  />
+                  <Heading>{i.label || i.id}</Heading>
+                </Card>
+              </Flex>
+            );
+          })}
       </Box>
     </Box>
   );
