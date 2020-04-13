@@ -9,8 +9,8 @@ import react from '../images/react.svg';
 import python from '../images/python.svg';
 import ts from '../images/typescript-icon.svg';
 import aws from '../images/aws.svg';
-import esri from '../images/esri.svg';
-import git from '../images/git-icon.svg';
+import esri from '../images/esri2.svg';
+import git from '../images/github-icon.svg';
 import nodejs from '../images/nodejs.svg';
 
 import serverless from '../images/serverless.svg';
@@ -60,15 +60,14 @@ export const social = [
 
 export const tech = {
   everyday: [
-    { id: 'js', src: js },
-    { id: 'react', src: react },
-    { id: 'python', src: python },
-    { id: 'ts', src: ts },
-    { id: 'nodejs', src: nodejs },
-    { id: 'aws', src: aws },
-    { id: 'esri', src: esri },
-
-    { id: 'git', src: git },
+    { id: 'js', src: js, label: 'JavaScript' },
+    { id: 'react', src: react, label: 'React' },
+    { id: 'python', src: python, label: 'Python' },
+    { id: 'ts', src: ts, label: 'TypeScript' },
+    { id: 'nodejs', src: nodejs, label: 'Node' },
+    { id: 'git', src: git, label: 'Github' },
+    { id: 'aws', src: aws, label: 'AWS' },
+    { id: 'esri', src: esri, label: 'Esri' },
   ],
   sometimes: [
     { id: 'serverless', src: serverless },
