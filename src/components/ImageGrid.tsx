@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Flex, Box, Heading, Image } from 'rebass';
+import { Card, Flex, Box, Heading, Image } from 'rebass';
 
 const ImageGrid = ({
   header,
@@ -8,7 +8,7 @@ const ImageGrid = ({
   repeat,
 }: {
   header: string;
-  items: { src: string; id: string }[];
+  items: { src: string; id: string; label?: string }[];
   size: string;
   repeat: number;
 }) => {
@@ -16,7 +16,7 @@ const ImageGrid = ({
     <Box sx={{ pb: 5 }}>
       <Heading
         sx={{
-          fontSize: [2, 3, 4],
+          fontSize: [3, 4, 5],
           mb: 4,
         }}
       >
@@ -38,7 +38,22 @@ const ImageGrid = ({
               key={i.id}
               sx={{ justifyContent: 'center', alignItems: 'center' }}
             >
-              <Image src={i.src} sx={{ p: 2, width: ['80%', size] }} />
+              <Card
+                sx={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  height: '15rem',
+                  backgroundColor: '#5e5e5e1a',
+                }}
+              >
+                <Image
+                  src={i.src}
+                  sx={{ p: 2, width: ['80%', size], minHeight: '175px' }}
+                />
+                <Heading>{i.label || i.id}</Heading>
+              </Card>
             </Flex>
           );
         })}

@@ -6,7 +6,7 @@ export default {
   ...preset,
   colors: {
     text: '#ffffff',
-    background: '#222222',
+    background: '#1a1a1a',
     primary: '#448aff',
     secondary: '#005ecb',
     accent: '#484848',
