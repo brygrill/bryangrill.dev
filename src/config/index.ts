@@ -40,6 +40,8 @@ import cognito from '../images/aws-cognito.svg';
 import dynamo from '../images/aws-dynamodb.svg';
 import twilio from '../images/twilio.svg';
 import sendgrid from '../images/sendgrid.svg';
+import next from '../images/nextjs.svg';
+import go from '../images/gopher.svg';
 
 export const features = {
   nav: true,
@@ -97,5 +99,7 @@ export const tech = {
     { id: 'dynamo', src: dynamo, label: 'DynamoDB' },
     { id: 'twilio', src: twilio, label: 'Twilio' },
     { id: 'sendgrid', src: sendgrid, label: 'SendGrid' },
+    { id: 'next', src: next, label: 'Next.js' },
+    { id: 'go', src: go, label: 'Go' },
   ],
 };
