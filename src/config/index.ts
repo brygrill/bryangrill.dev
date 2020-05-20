@@ -2,6 +2,7 @@ import {
   faGithub,
   faMediumM,
   faTwitter,
+  faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 
 import js from '../images/javascript.svg';
@@ -57,6 +58,11 @@ export const nav = [
 export const social = [
   { title: 'github', src: faGithub, href: 'https://github.com/brygrill' },
   { title: 'medium', src: faMediumM, href: 'https://medium.com/@brygrill' },
+  {
+    title: 'linkedin',
+    src: faLinkedin,
+    href: 'https://www.linkedin.com/in/bryangrill',
+  },
   { title: 'twitter', src: faTwitter, href: 'https://twitter.com/brygrill' },
 ];
 
