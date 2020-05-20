@@ -47,7 +47,7 @@ const ImageGrid = ({
                     alignItems: 'center',
                     justifyContent: 'center',
                     height: '15rem',
-                    backgroundColor: '#5e5e5e1a',
+                    backgroundColor: '#525252d6',
                   }}
                 >
                   <Image
