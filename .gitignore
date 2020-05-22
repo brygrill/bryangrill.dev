@@ -4,6 +4,7 @@
 
 # Build directory
 public/
+__sapper__
 
 # Gatsby cache
 .cache/
