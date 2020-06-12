@@ -108,6 +108,6 @@ export const tech = {
     { id: 'sendgrid', src: sendgrid, label: 'SendGrid' },
     { id: 'next', src: next, label: 'Next.js' },
     { id: 'go', src: go, label: 'Go' },
-    { id: 'cosmos', src: cosmos, label: 'Cosmos DB'}
+    { id: 'cosmos', src: cosmos, label: 'Cosmos DB' },
   ],
 };
