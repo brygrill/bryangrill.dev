@@ -44,6 +44,7 @@ import sendgrid from '../images/sendgrid.svg';
 import next from '../images/nextjs.svg';
 import go from '../images/gopher.svg';
 import cosmos from '../images/cosmos.svg';
+import webpack from '../images/webpack.svg';
 
 export const features = {
   nav: true,
@@ -109,5 +110,6 @@ export const tech = {
     { id: 'next', src: next, label: 'Next.js' },
     { id: 'go', src: go, label: 'Go' },
     { id: 'cosmos', src: cosmos, label: 'Cosmos DB' },
+    { id: 'webpack', src: webpack, label: 'webpack' },
   ],
 };
