@@ -19,6 +19,7 @@ jobs:
 
       - name: run CI
         run: |
+          cd gatsby
           yarn install
           yarn lint
           yarn test
