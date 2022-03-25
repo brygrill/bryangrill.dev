@@ -7,6 +7,8 @@ Personal site built with and deployed on multiple platforms
 
 ### Remix/Cloudfare
 
+### Vite/Vercel
+
 ### Gatsby/Netlify
 
 - Built with: [Gatsby](https://www.gatsbyjs.org/)
