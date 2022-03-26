@@ -9,6 +9,8 @@ Personal site built with and deployed on multiple platforms
 
 ### Vite/Vercel
 
+### Svelte/Vercel
+
 ### Gatsby/Netlify
 
 - Built with: [Gatsby](https://www.gatsbyjs.org/)
