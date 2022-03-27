@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-18.04
     strategy:
       matrix:
-        node_version: [14]
+        node_version: [16]
 
     steps:
       - uses: actions/checkout@v1
@@ -17,10 +17,17 @@ jobs:
         with:
           node_version: ${{ matrix.node_version }}
 
-      - name: run CI
+      - name: run CI gatsby
         run: |
           cd gatsby
           yarn install
           yarn lint
           yarn test
           yarn build
+
+      - name: run CI nextjs
+        run: |
+          cd nextjs
+          npm install
+          npm run lint
+          npm run build
