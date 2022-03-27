@@ -5,28 +5,16 @@ on: [push]
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-18.04
-    strategy:
-      matrix:
-        node_version: [17]
+    runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js ${{ matrix.node_version }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
         with:
-          node_version: ${{ matrix.node_version }}
-
-      # - name: run CI gatsby
-      #   run: |
-      #     cd gatsby
-      #     yarn install
-      #     yarn lint
-      #     yarn test
-      #     yarn build
+          node-version: '17'
 
       - name: run CI nextjs
         run: |
           cd nextjs
-          npm ci
-          npm run build
+          npm install
+          npm run lint
