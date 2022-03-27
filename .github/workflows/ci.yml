@@ -17,13 +17,13 @@ jobs:
         with:
           node_version: ${{ matrix.node_version }}
 
-      - name: run CI gatsby
-        run: |
-          cd gatsby
-          yarn install
-          yarn lint
-          yarn test
-          yarn build
+      # - name: run CI gatsby
+      #   run: |
+      #     cd gatsby
+      #     yarn install
+      #     yarn lint
+      #     yarn test
+      #     yarn build
 
       - name: run CI nextjs
         run: |
