@@ -1,0 +1,21 @@
+name: Next App CI
+
+on: [push]
+
+jobs:
+  nextjs:
+    name: NextJS Job
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '17'
+
+      - name: Run Scripts
+        run: |
+          cd nextjs
+          npm install
+          npm run lint
+          npm run build
