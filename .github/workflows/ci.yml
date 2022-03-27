@@ -28,6 +28,5 @@ jobs:
       - name: run CI nextjs
         run: |
           cd nextjs
-          npm install
-          npm run lint
+          npm ci
           npm run build
