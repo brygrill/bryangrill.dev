@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
+import bannerImg from '../../public/images/linkedin-brands.svg';
 
 const links = [
   { href: '/', label: 'Home', key: 'home' },
@@ -36,6 +38,10 @@ const NavMenu = () => {
 export const Header = () => (
   <header className="flex justify-between items-center p-2 md:p-4">
     <NavMenu />
-    <div>links here</div>
+    <div>
+      <a href="https://google.com">
+        <Image src={bannerImg} alt="Hero image" height={24} width={24} />
+      </a>
+    </div>
   </header>
 );
