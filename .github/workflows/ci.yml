@@ -3,7 +3,7 @@ name: CI
 on: [push]
 
 jobs:
-  build:
+  nextjs:
     name: NextJS CI
     runs-on: ubuntu-20.04
 
@@ -20,7 +20,7 @@ jobs:
           npm run lint
           npm run build
 
-  build:
+  gatsby:
     name: Gatsby CI
     runs-on: ubuntu-20.04
 
