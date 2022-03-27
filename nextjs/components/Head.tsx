@@ -1,7 +1,7 @@
 import NextHead from 'next/head';
 
 /** Render Next.js Head component across pages */
-const Head = () => {
+export const Head = () => {
   return (
     <NextHead>
       <title>Bryan Grill</title>
@@ -13,5 +13,3 @@ const Head = () => {
     </NextHead>
   );
 };
-
-export default Head;
