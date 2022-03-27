@@ -1,20 +1,23 @@
 @tailwind base;
+
+/* Write your own custom base styles here */
+
+.container-extended {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Start purging... */
 @tailwind components;
-@tailwind utilities;
+/* Stop purging. */
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply bg-slate-900 text-gray-50;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+/* Write your own custom component styles here */
 
-* {
-  box-sizing: border-box;
-}
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
