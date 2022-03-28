@@ -3,12 +3,12 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import linkedinImg from '../../public/images/links/linkedin.svg';
 import githubImg from '../../public/images/links/github.svg';
-import resumeImg from '../../public/images/links/represent-io.svg';
 
 const nav = [
   { href: '/', label: 'Home', key: 'home' },
   { href: '/projects', label: 'Projects', key: 'projects' },
   { href: '/about', label: 'About', key: 'about' },
+  { href: '/resume', label: 'Resume', key: 'resume' },
 ];
 
 const links = [
@@ -23,12 +23,6 @@ const links = [
     label: 'LinkedIn',
     key: 'linkedin',
     src: linkedinImg,
-  },
-  {
-    href: 'https://represent.io/bryangrill.pdf',
-    label: 'Resume',
-    key: 'resume',
-    src: resumeImg,
   },
 ];
 
