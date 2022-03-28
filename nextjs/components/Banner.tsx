@@ -2,7 +2,7 @@ import Image from 'next/image';
 import bannerImg from '../public/images/banner.svg';
 
 /** Render Hero image and Banner text */
-const Banner = () => {
+export const Banner = () => {
   return (
     <div className="flex flex-col md:flex-row items-center px-4 py-8">
       <span className="p-2 md:p-0 md:pr-2">
@@ -18,5 +18,3 @@ const Banner = () => {
     </div>
   );
 };
-
-export default Banner;
