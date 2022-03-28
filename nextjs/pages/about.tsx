@@ -4,7 +4,7 @@ import type { NextPage } from 'next';
 const About: NextPage = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">about!</h1>
+      <h1 className="text-3xl font-bold">About page here</h1>
     </div>
   );
 };
