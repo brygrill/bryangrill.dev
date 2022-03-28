@@ -6,8 +6,10 @@ const Home: NextPage = () => {
   return (
     <div>
       <Banner />
-      <HomePrimaryCards />
-      <HomeSecondaryCards />
+      <div className="py-4">
+        <HomePrimaryCards />
+        <HomeSecondaryCards />
+      </div>
     </div>
   );
 };
