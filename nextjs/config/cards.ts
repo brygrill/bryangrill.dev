@@ -93,7 +93,7 @@ export const cloud = [
   { label: 'AWS EC2', src: ec2Img },
   { label: 'Docker', src: dockerImg },
   { label: 'Kubernetes', src: kubernetesImg },
-  { label: 'GCP', src: gcpImg },
+  { label: 'Google Cloud Platform', src: gcpImg },
   { label: 'Serverless Framework', src: serverlessImg },
   { label: 'Cloudflare', src: cloudflareImg },
   { label: 'Netlify', src: netlifyImg },
