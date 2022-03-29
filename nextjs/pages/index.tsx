@@ -1,5 +1,11 @@
 import type { NextPage } from 'next';
-import { Banner, HomePrimaryCards, HomeSecondaryCards } from '../components';
+import {
+  Banner,
+  HomePrimaryCards,
+  HomeSecondaryCards,
+  HomeCloudCards,
+  HomeDatabaseCards,
+} from '../components';
 
 /** Render Home page */
 const Home: NextPage = () => {
@@ -9,6 +15,8 @@ const Home: NextPage = () => {
       <div className="py-4">
         <HomePrimaryCards />
         <HomeSecondaryCards />
+        <HomeDatabaseCards />
+        <HomeCloudCards />
       </div>
     </div>
   );
