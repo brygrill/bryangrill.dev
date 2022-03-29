@@ -1,7 +1,4 @@
 import Image from 'next/image';
-import reactImg from '../public/images/logos/react.svg';
-
-const test = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 interface CardProps {
   label: string;
@@ -20,11 +17,16 @@ export const Card = ({ label, hw, src }: CardProps) => {
   );
 };
 
-export const CardGroup = () => {
+interface CardGroupProps {
+  cards: Omit<CardProps, 'hw'>[];
+  hw: number;
+}
+
+export const CardGroup = ({ cards, hw }: CardGroupProps) => {
   return (
     <div className="grid gap-4 grid-cols-1 md:grid-cols-3">
-      {test.map((item) => (
-        <Card key={item} hw={96} label="React" src={reactImg} />
+      {cards.map(({ label, src }) => (
+        <Card key={label} hw={hw} label={label} src={src} />
       ))}
     </div>
   );
