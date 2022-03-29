@@ -5,7 +5,12 @@ export const HomePrimaryCards = () => {
   return (
     <div>
       <h4 className="text-xl font-semibold pb-2">Everyday I use</h4>
-      <CardGroup cards={primary} height={120} width={120} cols="grid-cols-2" />
+      <CardGroup
+        cards={primary}
+        height={120}
+        width={120}
+        cols="md:grid-cols-2"
+      />
     </div>
   );
 };
@@ -41,7 +46,7 @@ export const HomeSecondaryCards = () => {
   return (
     <div className="pt-6 md:pt-10">
       <h4 className="text-xl font-semibold pb-2">I also develop with</h4>
-      <CardGroup cards={secondary} cols="grid-cols-4" />
+      <CardGroup cards={secondary} cols="md:grid-cols-4" />
     </div>
   );
 };
