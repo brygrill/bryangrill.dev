@@ -3,12 +3,14 @@ import NextHead from 'next/head';
 import { useRouter } from 'next/router';
 import { nav } from '../config';
 
+const baseTitle = 'Bryan Grill - Software Developer';
+
 /** Render Next.js Head component across pages */
 export const Head = () => {
   const { route } = useRouter();
   const title = useMemo(() => {
     const match = nav.find(({ href }) => href === route);
-    return match ? `Bryan Grill | ${match.label}` : 'Bryan Grill';
+    return match ? `${match.label} | ${baseTitle}` : baseTitle;
   }, [route]);
   return (
     <NextHead>
