@@ -24,6 +24,7 @@ import gatsbyImg from '../public/images/logos/gatsby.svg';
 import sentryImg from '../public/images/logos/sentry.svg';
 import webpackImg from '../public/images/logos/webpack.svg';
 import apolloImg from '../public/images/logos/apollostack.svg';
+import circleciImg from '../public/images/logos/circleci.svg';
 
 // cloud
 import awsImg from '../public/images/logos/aws.svg';
@@ -77,6 +78,7 @@ export const secondary = [
   { label: 'Sentry', src: sentryImg },
   { label: 'Webpack', src: webpackImg },
   { label: 'Apollo', src: apolloImg },
+  { label: 'CircleCI', src: circleciImg },
 ].sort((a, b) => a.label.localeCompare(b.label));
 
 export const cloud = [
