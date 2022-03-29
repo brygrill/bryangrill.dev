@@ -24,6 +24,14 @@ interface CardGroupProps {
   width?: number;
   cols?: 'grid-cols-4' | 'grid-cols-3' | 'grid-cols-2' | 'grid-cols-1';
 }
+const col = 'grid-cols-3';
+const a = `grid gap-4 grid-cols-1 md:grid-cols-3`;
+const b = `grid gap-4 grid-cols-1 md:${col}`;
+
+console.log(a);
+console.log(b);
+
+console.log(a === b);
 
 export const CardGroup = ({
   cards,
