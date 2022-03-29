@@ -1,30 +1,7 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import linkedinImg from '../../public/images/links/linkedin.svg';
-import githubImg from '../../public/images/links/github.svg';
-
-const nav = [
-  { href: '/', label: 'Home', key: 'home' },
-  { href: '/projects', label: 'Projects', key: 'projects' },
-  { href: '/about', label: 'About', key: 'about' },
-  { href: '/resume', label: 'Resume', key: 'resume' },
-];
-
-const links = [
-  {
-    href: 'https://github.com/brygrill',
-    label: 'Github',
-    key: 'github',
-    src: githubImg,
-  },
-  {
-    href: 'https://www.linkedin.com/in/bryangrill',
-    label: 'LinkedIn',
-    key: 'linkedin',
-    src: linkedinImg,
-  },
-];
+import { nav, links } from '../../config';
 
 const NavMenu = () => {
   const { route } = useRouter();
@@ -32,7 +9,7 @@ const NavMenu = () => {
     <nav>
       <ul className="flex">
         {nav.map(({ href, label, key }) => (
-          <li key={key} className="mr-4 md:mr-8">
+          <li key={key} className="mr-4 md:mr-8 text-lg">
             <Link href={href}>
               <a
                 className={`${
