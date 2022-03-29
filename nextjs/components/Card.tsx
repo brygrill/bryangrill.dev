@@ -32,7 +32,7 @@ export const CardGroup = ({
   cols = 'grid-cols-3',
 }: CardGroupProps) => {
   return (
-    <div className={`grid gap-4 grid-cols-1 md:${cols}`}>
+    <div className={`grid gap-4 grid-cols-1 md:grid-cols-3`}>
       {cards.map(({ label, src, height: cardHeight, width: cardWidth }) => (
         <Card
           key={label}
