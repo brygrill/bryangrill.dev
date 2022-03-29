@@ -22,11 +22,17 @@ interface CardGroupProps {
   cards: CardProps[];
   height?: number;
   width?: number;
+  cols?: 'grid-cols-4' | 'grid-cols-3' | 'grid-cols-2' | 'grid-cols-1';
 }
 
-export const CardGroup = ({ cards, height, width }: CardGroupProps) => {
+export const CardGroup = ({
+  cards,
+  height,
+  width,
+  cols = 'grid-cols-3',
+}: CardGroupProps) => {
   return (
-    <div className="grid gap-4 grid-cols-1 md:grid-cols-3">
+    <div className={`grid gap-4 grid-cols-1 md:${cols}`}>
       {cards.map(({ label, src, height: cardHeight, width: cardWidth }) => (
         <Card
           key={label}
