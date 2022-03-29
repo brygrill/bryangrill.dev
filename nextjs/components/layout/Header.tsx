@@ -9,7 +9,7 @@ const NavMenu = () => {
     <nav>
       <ul className="flex">
         {nav.map(({ href, label, key }) => (
-          <li key={key} className="mr-4 md:mr-8">
+          <li key={key} className="mr-4 md:mr-8 text-lg">
             <Link href={href}>
               <a
                 className={`${
