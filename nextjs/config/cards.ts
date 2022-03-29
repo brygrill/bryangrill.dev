@@ -52,24 +52,24 @@ import dynamoImg from '../public/images/logos/aws-dynamodb.svg';
 export const primary = [
   { label: 'React', src: reactImg },
   { label: 'TypeScript', src: tsImg },
-  { label: 'React Query', src: rqImg },
+  { label: 'React Query', src: rqImg, width: 300 },
   { label: 'NodeJS', src: nodeImg },
 ];
 
 export const favorite = [
-  { label: 'NextJS', src: nextImg },
+  { label: 'NextJS', src: nextImg, width: 175 },
   { label: 'Tailwind CSS', src: tailwindImg },
-  { label: 'Vercel', src: vercelImg },
+  { label: 'Vercel', src: vercelImg, width: 250 },
 ];
 
 export const secondary = [
   { label: 'JavaScript', src: jsImg },
   { label: 'Python', src: pyImg },
-  { label: 'Express', src: expressImg },
+  { label: 'Express', src: expressImg, width: 150 },
   { label: 'React Router', src: reactRouterImg },
   { label: 'Material UI', src: materialImg },
   { label: 'Postman', src: postmanImg },
-  { label: 'Nginx', src: nginxImg },
+  { label: 'Nginx', src: nginxImg, width: 150 },
   { label: 'Deno', src: denoImg },
   { label: 'GraphQL', src: graphqlImg },
   { label: 'Jest', src: jestImg },

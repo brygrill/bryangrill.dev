@@ -2,15 +2,16 @@ import Image from 'next/image';
 
 interface CardProps {
   label: string;
-  hw: number;
   src: string;
+  height?: number;
+  width?: number;
 }
 
-export const Card = ({ label, hw, src }: CardProps) => {
+export const Card = ({ label, src, height = 64, width = 64 }: CardProps) => {
   return (
     <div className="p-4 w-full md:w-auto bg-slate-500 rounded-md flex items-center flex-col">
       <span>
-        <Image src={src} alt={`${label} logo`} height={hw} width={hw} />
+        <Image src={src} alt={`${label} logo`} height={height} width={width} />
       </span>
       <div className="text-slate-900 text-xl">{label}</div>
     </div>
@@ -18,15 +19,22 @@ export const Card = ({ label, hw, src }: CardProps) => {
 };
 
 interface CardGroupProps {
-  cards: Omit<CardProps, 'hw'>[];
-  hw: number;
+  cards: CardProps[];
+  height?: number;
+  width?: number;
 }
 
-export const CardGroup = ({ cards, hw }: CardGroupProps) => {
+export const CardGroup = ({ cards, height, width }: CardGroupProps) => {
   return (
     <div className="grid gap-4 grid-cols-1 md:grid-cols-3">
-      {cards.map(({ label, src }) => (
-        <Card key={label} hw={hw} label={label} src={src} />
+      {cards.map(({ label, src, height: cardHeight, width: cardWidth }) => (
+        <Card
+          key={label}
+          height={cardHeight || height}
+          width={cardWidth || width}
+          label={label}
+          src={src}
+        />
       ))}
     </div>
   );
