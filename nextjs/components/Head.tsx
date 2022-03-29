@@ -1,10 +1,18 @@
+import { useMemo } from 'react';
 import NextHead from 'next/head';
+import { useRouter } from 'next/router';
+import { nav } from '../config';
 
 /** Render Next.js Head component across pages */
 export const Head = () => {
+  const { route } = useRouter();
+  const title = useMemo(() => {
+    const match = nav.find(({ href }) => href === route);
+    return match ? `Bryan Grill | ${match.label}` : 'Bryan Grill';
+  }, [route]);
   return (
     <NextHead>
-      <title>Bryan Grill</title>
+      <title>{title}</title>
       <link rel="icon" href="/favicon.png" />
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />

@@ -5,7 +5,7 @@ export const nav = [
   { href: '/', label: 'Home', key: 'home', display: true },
   { href: '/projects', label: 'Projects', key: 'projects' },
   { href: '/about', label: 'About', key: 'about' },
-  { href: '/resume', label: 'Resume', key: 'resume' },
+  { href: '/resume', label: 'Resume', key: 'resume', display: true },
 ].filter((item) => item.display);
 
 export const links = [
