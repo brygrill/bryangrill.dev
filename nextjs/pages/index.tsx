@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import {
   Banner,
   HomePrimaryCards,
+  HomeFavoritesCards,
   HomeSecondaryCards,
   HomeCloudCards,
   HomeDatabaseCards,
@@ -14,9 +15,10 @@ const Home: NextPage = () => {
       <Banner />
       <div className="py-4">
         <HomePrimaryCards />
-        <HomeSecondaryCards />
-        <HomeDatabaseCards />
+        <HomeFavoritesCards />
         <HomeCloudCards />
+        <HomeDatabaseCards />
+        <HomeSecondaryCards />
       </div>
     </div>
   );

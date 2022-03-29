@@ -1,5 +1,5 @@
 import { CardGroup } from './Card';
-import { primary, secondary, cloud, database } from '../config/cards';
+import { primary, favorite, secondary, cloud, database } from '../config/cards';
 
 export const HomePrimaryCards = () => {
   return (
@@ -10,11 +10,11 @@ export const HomePrimaryCards = () => {
   );
 };
 
-export const HomeSecondaryCards = () => {
+export const HomeFavoritesCards = () => {
   return (
     <div className="pt-6 md:pt-10">
-      <h4 className="text-xl font-semibold pb-2">I also work with</h4>
-      <CardGroup cards={secondary} hw={64} />
+      <h4 className="text-xl font-semibold pb-2">I love working with</h4>
+      <CardGroup cards={favorite} hw={108} />
     </div>
   );
 };
@@ -33,6 +33,15 @@ export const HomeDatabaseCards = () => {
     <div className="pt-6 md:pt-10">
       <h4 className="text-xl font-semibold pb-2">{`I've built apps with`}</h4>
       <CardGroup cards={database} hw={64} />
+    </div>
+  );
+};
+
+export const HomeSecondaryCards = () => {
+  return (
+    <div className="pt-6 md:pt-10">
+      <h4 className="text-xl font-semibold pb-2">I also develop with</h4>
+      <CardGroup cards={secondary} hw={64} />
     </div>
   );
 };
