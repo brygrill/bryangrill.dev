@@ -5,18 +5,18 @@ export const HomePrimaryCards = () => {
   return (
     <div>
       <h4 className="text-xl font-semibold pb-2">Everyday I Work With</h4>
-      <CardGroup cards={primary} hw={96} />
+      <CardGroup cards={primary} hw={108} />
     </div>
   );
 };
 
 export const HomeSecondaryCards = () => {
   return (
-    <div className="pt-4">
+    <div className="pt-6 md:pt-10">
       <h4 className="text-xl font-semibold pb-2">
         I Also Have Experience With
       </h4>
-      <CardGroup cards={primary} hw={72} />
+      <CardGroup cards={secondary} hw={64} />
     </div>
   );
 };

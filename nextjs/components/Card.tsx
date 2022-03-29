@@ -8,9 +8,9 @@ interface CardProps {
 
 export const Card = ({ label, hw, src }: CardProps) => {
   return (
-    <div className="p-4 w-full md:w-auto bg-slate-600 rounded-md flex items-center flex-col">
+    <div className="p-4 w-full md:w-auto bg-slate-500 rounded-md flex items-center flex-col">
       <span>
-        <Image src={src} alt="Hero image" height={hw} width={hw} />
+        <Image src={src} alt={`${label} logo`} height={hw} width={hw} />
       </span>
       <div className="text-slate-900 text-xl">{label}</div>
     </div>
