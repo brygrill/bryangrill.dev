@@ -14,12 +14,12 @@ export const Head = () => {
       />
       <meta
         name="description"
-        content="Personal website of software developer Bryan Grill. He enjoys working with React, Next.js, and TypeScript."
+        content="Personal website of software developer Bryan Grill. He enjoys working with React, TypeScript, and NodeJS."
       />
       <meta property="og:title" content="Bryan Grill - Software Developer" />
       <meta
         property="og:description"
-        content="Bryan Grill | Sofware Developer | React | NodeJS | TypeScript"
+        content="Personal website of software developer Bryan Grill."
       />
       <meta
         property="og:image"
