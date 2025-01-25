@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        node-version: [20]
+        node-version: [22]
     steps:
       - uses: actions/checkout@v4
       - name: Nav to nextjs directory
@@ -21,11 +21,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "pnpm"
+          cache: "nextjs/pnpm"
       - name: Install dependencies
         run: pnpm install
       - name: Run Scripts
         run: |
-          cd nextjs
           pnpm run lint
           pnpm run build
