@@ -11,6 +11,8 @@ jobs:
         node-version: [20]
     steps:
       - uses: actions/checkout@v4
+      - name: Nav to nextjs directory
+        run: cd nextjs
       - name: Install pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -25,6 +27,5 @@ jobs:
       - name: Run Scripts
         run: |
           cd nextjs
-          npm install
-          npm run lint
-          npm run build
+          pnpm run lint
+          pnpm run build
